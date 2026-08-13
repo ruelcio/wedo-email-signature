@@ -1,0 +1,69 @@
+package ao.grupowedo.emailssignature.service;
+
+import java.io.FileInputStream;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport;
+import com.google.api.client.json.gson.GsonFactory;
+import com.google.api.services.sheets.v4.Sheets;
+import com.google.api.services.sheets.v4.model.ValueRange;
+import com.google.auth.http.HttpCredentialsAdapter;
+import com.google.auth.oauth2.GoogleCredentials;
+
+import ao.grupowedo.emailssignature.model.Employee;
+
+@Service
+public class GoogleSheetsService {
+
+    private static final String APPLICATION_NAME = "Wedo Email Signature";
+    private static final String SPREADSHEET_ID = "1gLNRFchOwv5HLOCV50octxC05gJ4yBXq61Pmn7UTL54";
+    private static final String RANGE = "Colaboradores!A:D";
+    private static final String CREDENTIALS_PATH = "C:\\Users\\webui\\Desktop\\wedo-email-signature-91bf122240ce.json";
+
+    public List<Employee> readEmployees() throws Exception {
+        GoogleCredentials credentials = GoogleCredentials
+            .fromStream(new FileInputStream(CREDENTIALS_PATH))
+            .createScoped(Collections.singleton(
+                "https://www.googleapis.com/auth/spreadsheets.readonly")
+            );
+
+        Sheets sheetsService = new Sheets.Builder(
+            GoogleNetHttpTransport.newTrustedTransport(),
+            GsonFactory.getDefaultInstance(),
+            new HttpCredentialsAdapter(credentials))
+                .setApplicationName(APPLICATION_NAME)
+                .build();
+
+        ValueRange response = sheetsService.spreadsheets()
+            .values()
+            .get(SPREADSHEET_ID, RANGE)
+            .execute();
+
+        List<Employee> employees = new ArrayList<>();
+        if (response.getValues() == null) {
+            return employees;
+        }
+        List<List<Object>> rows = response.getValues();
+        for (int i = 1; i < rows.size(); i++) {
+            List<Object>    row = rows.get(i);
+
+            String name = row.size() > 0 ? row.get(0).toString() : "";
+            String position = row.size() > 1 ? row.get(1).toString() : "";
+            String email = row.size() > 2 ? row.get(2).toString() : "";
+            String phone = row.size() > 3 ? row.get(3).toString() : "";
+
+            Employee    employee = new Employee(
+                name,
+                position,
+                email,
+                phone
+            );
+            employees.add(employee);
+        }
+        return employees;
+    }
+}
