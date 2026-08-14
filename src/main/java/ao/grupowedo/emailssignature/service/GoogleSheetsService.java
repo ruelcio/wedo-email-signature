@@ -21,7 +21,7 @@ public class GoogleSheetsService {
 
     private static final String APPLICATION_NAME = "Wedo Email Signature";
     private static final String SPREADSHEET_ID = "1gLNRFchOwv5HLOCV50octxC05gJ4yBXq61Pmn7UTL54";
-    private static final String RANGE = "Colaboradores!A:D";
+    private static final String RANGE = "Colaboradores!A:E";
     private static final String CREDENTIALS_PATH = "C:\\Users\\webui\\Desktop\\wedo-email-signature-91bf122240ce.json";
 
     public List<Employee> readEmployees() throws Exception {
@@ -51,12 +51,14 @@ public class GoogleSheetsService {
         for (int i = 1; i < rows.size(); i++) {
             List<Object>    row = rows.get(i);
 
-            String name = row.size() > 0 ? row.get(0).toString() : "";
-            String position = row.size() > 1 ? row.get(1).toString() : "";
-            String email = row.size() > 2 ? row.get(2).toString() : "";
-            String phone = row.size() > 3 ? row.get(3).toString() : "";
+            Long id = row.size() > 0 ? Long.parseLong(row.get(0).toString()) : null;
+            String name = row.size() > 1 ? row.get(1).toString() : "";
+            String position = row.size() > 2 ? row.get(2).toString() : "";
+            String email = row.size() > 3 ? row.get(3).toString() : "";
+            String phone = row.size() > 4 ? row.get(4).toString() : "";
 
             Employee    employee = new Employee(
+                id,
                 name,
                 position,
                 email,

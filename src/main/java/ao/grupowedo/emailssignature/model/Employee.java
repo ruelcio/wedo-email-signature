@@ -1,6 +1,7 @@
 package ao.grupowedo.emailssignature.model;
 
 public class Employee {
+    private Long    id;
     private String  name;
     private String  position;
     private String  email;
@@ -10,14 +11,24 @@ public class Employee {
 
     }
     public Employee(
-        String name,
-        String position,
-        String email,
-        String phone) {
+        Long    id,
+        String  name,
+        String  position,
+        String  email,
+        String  phone) {
+            this.id = id;
             this.name = name;
             this.position = position;
             this.email = email;
             this.phone = phone;
+    }
+
+    public Long getId() {
+        return id;
+    }
+    
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String   getName() {
