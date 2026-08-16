@@ -71,6 +71,12 @@
 		    <artifactId>google-api-services-sheets</artifactId>
 		    <version>v4-rev20250616-2.0.0</version>
 		</dependency>
+
+		<dependency>
+		    <groupId>com.microsoft.playwright</groupId>
+		    <artifactId>playwright</artifactId>
+		    <version>1.55.0</version>
+		</dependency>
 	</dependencies>
 
 	<build>
