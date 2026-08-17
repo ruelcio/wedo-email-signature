@@ -30,286 +30,14 @@ public class RoundcubeBot {
         // =========================================================
 
         String assinaturaHtml = """
-            <table style="background-color: #fff;" role="presentation" border="0" cellspacing="0" cellpadding="0">
-                <tbody>
+            <p>
+                <strong>Ruélcio Muliata</strong><br>
+                IT Intern<br>
+                Grupo Wedo<br>
+                ruelcio.muliata@grupowedo.ao
+            </p>
+            """;
 
-                    <tr>
-                        <td style="color: #000000; font-size: 12px; font-family: Verdana, Geneva, sans-serif;">
-                            Com os melhores cumprimentos | Best regards,
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td style="font-size: 1px;" height="18">
-                            <br>
-                        </td>
-                    </tr>
-
-                </tbody>
-            </table>
-
-            <table
-                style="color: #000000; font-family: Verdana, Geneva, sans-serif; background-color: #fff;"
-                role="presentation"
-                border="0"
-                width="700"
-                cellspacing="0"
-                cellpadding="0"
-            >
-                <tbody>
-
-                    <tr>
-
-                        <!-- BLOCO ESQUERDO -->
-
-                        <td valign="top" width="60%">
-
-                            <table
-                                role="presentation"
-                                border="0"
-                                cellspacing="0"
-                                cellpadding="0"
-                            >
-                                <tbody>
-
-                                    <!-- NOME -->
-
-                                    <tr>
-                                        <td style="
-                                            color: #000000;
-                                            font-size: 18px;
-                                            font-family: Verdana, Geneva, sans-serif;
-                                            font-weight: bold;
-                                        ">
-                                            Ruélcio Muliata
-                                        </td>
-                                    </tr>
-
-                                    <!-- CARGO -->
-
-                                    <tr>
-                                        <td style="
-                                            color: #7e8c8d;
-                                            font-size: 15px;
-                                            font-family: Verdana, Geneva, sans-serif;
-                                            font-weight: 500;
-                                        ">
-                                            IT Intern
-                                        </td>
-                                    </tr>
-
-                                    <!-- ESPAÇO -->
-
-                                    <tr>
-                                        <td style="font-size: 1px;" height="18">
-                                            <br>
-                                        </td>
-                                    </tr>
-
-                                    <!-- TELEFONE -->
-
-                                    <tr>
-                                        <td style="
-                                            color: #000000;
-                                            font-size: 14px;
-                                            font-family: Verdana, Geneva, sans-serif;
-                                        ">
-                                            Tel:
-                                            <a
-                                                style="color: inherit;"
-                                                href="tel:(+244) 900 900 900"
-                                            >
-                                                (+244) 900 900 900
-                                            </a>
-                                        </td>
-                                    </tr>
-
-                                    <!-- EMAIL -->
-
-                                    <tr>
-                                        <td style="
-                                            color: #000000;
-                                            font-size: 14px;
-                                            font-family: Verdana, Geneva, sans-serif;
-                                        ">
-                                            E-mail:
-                                            <a
-                                                style="color: inherit;"
-                                                href="mailto:ruelcio.muliata@grupowedo.ao"
-                                            >
-                                                ruelcio.muliata@grupowedo.ao
-                                            </a>
-                                        </td>
-                                    </tr>
-
-                                    <!-- WEBSITE -->
-
-                                    <tr>
-                                        <td style="
-                                            color: #000000;
-                                            font-size: 14px;
-                                            font-family: Verdana, Geneva, sans-serif;
-                                        ">
-                                            Website:
-                                            <a
-                                                style="color: inherit;"
-                                                href="https://grupowedo.ao/"
-                                            >
-                                                www.grupowedo.ao
-                                            </a>
-                                        </td>
-                                    </tr>
-
-                                    <!-- ESPAÇO -->
-
-                                    <tr>
-                                        <td style="font-size: 1px;" height="22">
-                                            <br>
-                                        </td>
-                                    </tr>
-
-                                    <!-- REDES SOCIAIS -->
-
-                                    <tr>
-                                        <td>
-
-                                            <table
-                                                role="presentation"
-                                                border="0"
-                                                cellspacing="0"
-                                                cellpadding="0"
-                                            >
-                                                <tbody>
-
-                                                    <tr>
-
-                                                        <!-- FACEBOOK -->
-
-                                                        <td>
-                                                            <a href="https://facebook.com/">
-                                                                <img
-                                                                    src="https://res.cloudinary.com/jqgxvpiv/image/upload/v1786117641/face-icon_nknabx.png"
-                                                                    alt="Facebook"
-                                                                    width="23"
-                                                                    height="23"
-                                                                >
-                                                            </a>
-                                                        </td>
-
-                                                        <!-- ESPAÇO -->
-
-                                                        <td
-                                                            style="font-size: 1px;"
-                                                            width="10"
-                                                        >
-                                                            <br>
-                                                        </td>
-
-                                                        <!-- LINKEDIN -->
-
-                                                        <td>
-                                                            <a href="https://linkedin.com/">
-                                                                <img
-                                                                    src="https://res.cloudinary.com/jqgxvpiv/image/upload/v1786117641/linkedin-icon_suefyj.png"
-                                                                    alt="LinkedIn"
-                                                                    width="23"
-                                                                    height="23"
-                                                                >
-                                                            </a>
-                                                        </td>
-
-                                                        <!-- ESPAÇO -->
-
-                                                        <td
-                                                            style="font-size: 1px;"
-                                                            width="10"
-                                                        >
-                                                            <br>
-                                                        </td>
-
-                                                        <!-- INSTAGRAM -->
-
-                                                        <td>
-                                                            <a href="https://instagram.com/">
-                                                                <img
-                                                                    src="https://res.cloudinary.com/jqgxvpiv/image/upload/v1786117640/insta-icon_c2yc8b.png"
-                                                                    alt="Instagram"
-                                                                    width="23"
-                                                                    height="23"
-                                                                >
-                                                            </a>
-                                                        </td>
-
-                                                    </tr>
-
-                                                </tbody>
-                                            </table>
-
-                                        </td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
-
-                        </td>
-
-                        <!-- LOGO -->
-
-                        <td
-                            align="right"
-                            valign="top"
-                            width="40%"
-                        >
-                            <img
-                                src="https://res.cloudinary.com/jqgxvpiv/image/upload/v1786117639/group-icon-named_jqhquj.png"
-                                alt="Grupo Wedo"
-                                width="250"
-                                align="right"
-                            >
-                        </td>
-
-                    </tr>
-
-                </tbody>
-            </table>
-
-            <!-- ESPAÇO ANTES DA BARRA -->
-
-            <table
-                role="presentation"
-                border="0"
-                cellspacing="0"
-                cellpadding="0"
-            >
-                <tbody>
-
-                    <tr>
-                        <td
-                            style="font-size: 1px;"
-                            height="5"
-                        >
-                            <br>
-                        </td>
-                    </tr>
-
-                    <!-- BARRA -->
-
-                    <tr>
-                        <td>
-                            <img
-                                role="presentation"
-                                src="https://res.cloudinary.com/jqgxvpiv/image/upload/v1786117646/group_sign_iihdkl.gif"
-                                alt=""
-                                width="700"
-                                height="15"
-                                aria-hidden="true"
-                            >
-                        </td>
-                    </tr>
-
-                </tbody>
-            </table>
-        """;
 
         // =========================================================
         // PLAYWRIGHT
@@ -324,23 +52,28 @@ public class RoundcubeBot {
 
             Page page = browser.newPage();
 
+
             // =====================================================
             // 1. ABRIR WEBMAIL
             // =====================================================
 
             System.out.println("Abrindo Webmail...");
 
-            page.navigate("https://webmail.grupowedo.ao");
+            page.navigate(
+                "https://webmail.grupowedo.ao"
+            );
 
             System.out.println(
                 "Página aberta: " + page.url()
             );
+
 
             // =====================================================
             // 2. LOGIN
             // =====================================================
 
             page.locator("#user").fill(email);
+
             page.locator("#pass").fill(password);
 
             System.out.println(
@@ -354,6 +87,7 @@ public class RoundcubeBot {
             );
 
             page.waitForTimeout(3000);
+
 
             // =====================================================
             // 3. OPEN
@@ -409,6 +143,7 @@ public class RoundcubeBot {
                 page.title()
             );
 
+
             // =====================================================
             // 4. CONFIGURAÇÕES
             // =====================================================
@@ -436,6 +171,7 @@ public class RoundcubeBot {
             System.out.println(
                 "URL: " + page.url()
             );
+
 
             // =====================================================
             // 5. IDENTIDADES
@@ -467,6 +203,7 @@ public class RoundcubeBot {
                 "URL: " + page.url()
             );
 
+
             // =====================================================
             // 6. SELECIONAR IDENTIDADE
             // =====================================================
@@ -493,8 +230,9 @@ public class RoundcubeBot {
                 "Identidade selecionada."
             );
 
+
             // =====================================================
-            // 7. LOCALIZAR O IFRAME
+            // 7. LOCALIZAR IFRAME
             // =====================================================
 
             System.out.println(
@@ -512,35 +250,26 @@ public class RoundcubeBot {
                 "Iframe preferences-frame encontrado."
             );
 
-            /*
-             * IMPORTANTE:
-             *
-             * Não usamos:
-             *
-             * Frame frame = ...
-             *
-             * Usamos FrameLocator.
-             */
-
             FrameLocator frame =
                 page.frameLocator(
                     "#preferences-frame"
                 );
 
+
             // =====================================================
-            // 8. BOTÃO HTML
+            // 8. TROCAR O EDITOR PARA HTML
             // =====================================================
 
             System.out.println(
-                "Procurando botão HTML..."
+                "Alternando o editor para o modo HTML..."
             );
 
-            Locator htmlButton =
+            Locator htmlToggle =
                 frame.locator(
-                    "a.mce-i-html"
+                    "button.mce-i-html, a.mce-i-html, button.mce-i-code, a.mce-i-code, button[aria-label*=\"HTML\"], button[title*=\"HTML\"]"
                 );
 
-            htmlButton.waitFor(
+            htmlToggle.first().waitFor(
                 new Locator.WaitForOptions()
                     .setState(
                         WaitForSelectorState.ATTACHED
@@ -548,38 +277,41 @@ public class RoundcubeBot {
             );
 
             System.out.println(
-                "Botão HTML encontrado."
+                "Toggle do editor HTML encontrado."
             );
 
             System.out.println(
-                "Botão HTML visível: "
-                + htmlButton.isVisible()
+                "Toggle visível: "
+                + htmlToggle.first().isVisible()
             );
 
-            System.out.println(
-                "Clicando no botão HTML..."
-            );
-
-            /*
-             * O botão pode estar marcado como hidden
-             * pelo TinyMCE.
-             *
-             * Por isso usamos force.
-             */
-
-            htmlButton.click(
+            // O Roundcube/TinyMCE às vezes exige dois toques para sair
+            // do modo visual e entrar no modo HTML de verdade.
+            htmlToggle.first().click(
                 new Locator.ClickOptions()
                     .setForce(true)
             );
 
-            page.waitForTimeout(1000);
+            page.waitForTimeout(500);
+
+            htmlToggle.first().click(
+                new Locator.ClickOptions()
+                    .setForce(true)
+            );
+
+            System.out.println(
+                "Clique duplo no editor executado."
+            );
+
+            page.waitForTimeout(1500);
 
             System.out.println(
                 "Modo HTML ativado."
             );
 
+
             // =====================================================
-            // 9. TEXTAREA DA ASSINATURA
+            // 9. LOCALIZAR TEXTAREA
             // =====================================================
 
             System.out.println(
@@ -607,21 +339,20 @@ public class RoundcubeBot {
                 + signatureTextarea.isVisible()
             );
 
+
             // =====================================================
             // 10. LER ASSINATURA ATUAL
             // =====================================================
 
-            Object currentValueObject =
-                signatureTextarea.evaluate(
-                    "element => element.value"
-                );
-
             String currentValue =
-                currentValueObject == null
-                    ? ""
-                    : currentValueObject.toString();
+                signatureTextarea
+                    .evaluate(
+                        "element => element.value"
+                    )
+                    .toString();
 
             System.out.println();
+
             System.out.println(
                 "=========================================="
             );
@@ -637,6 +368,7 @@ public class RoundcubeBot {
             System.out.println(
                 "=========================================="
             );
+
 
             // =====================================================
             // 11. INSERIR NOVA ASSINATURA
@@ -664,30 +396,37 @@ public class RoundcubeBot {
                         })
                     );
 
+                    element.dispatchEvent(
+                        new Event('blur', {
+                            bubbles: true
+                        })
+                    );
+
                 }
                 """,
                 assinaturaHtml
             );
 
+            page.waitForTimeout(500);
+
             System.out.println(
                 "HTML inserido."
             );
+
 
             // =====================================================
             // 12. VERIFICAR ALTERAÇÃO
             // =====================================================
 
-            Object newValueObject =
-                signatureTextarea.evaluate(
-                    "element => element.value"
-                );
-
             String newValue =
-                newValueObject == null
-                    ? ""
-                    : newValueObject.toString();
+                signatureTextarea
+                    .evaluate(
+                        "element => element.value"
+                    )
+                    .toString();
 
             System.out.println();
+
             System.out.println(
                 "=========================================="
             );
@@ -704,6 +443,7 @@ public class RoundcubeBot {
                 "=========================================="
             );
 
+
             if (!newValue.contains("Ruélcio Muliata")) {
 
                 throw new IllegalStateException(
@@ -714,6 +454,7 @@ public class RoundcubeBot {
             System.out.println(
                 "Assinatura inserida corretamente."
             );
+
 
             // =====================================================
             // 13. SALVAR
@@ -752,13 +493,15 @@ public class RoundcubeBot {
                 "Botão Salvar clicado."
             );
 
+
             // =====================================================
-            // 14. AGUARDAR ROUNDcube
+            // 14. AGUARDAR SALVAMENTO
             // =====================================================
 
             page.waitForTimeout(3000);
 
             System.out.println();
+
             System.out.println(
                 "=========================================="
             );
@@ -779,11 +522,13 @@ public class RoundcubeBot {
                 page.url()
             );
 
+
             // =====================================================
             // 15. MANTER NAVEGADOR ABERTO
             // =====================================================
 
             System.out.println();
+
             System.out.println(
                 "Pressiona ENTER para fechar..."
             );
