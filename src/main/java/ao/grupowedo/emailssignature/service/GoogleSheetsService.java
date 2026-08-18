@@ -39,7 +39,6 @@ public class GoogleSheetsService {
                 "A variável GOOGLE_CREDENTIALS_JSON não está configurada."
             );
         }
-
         GoogleCredentials credentials = GoogleCredentials
             .fromStream(
                 new ByteArrayInputStream(
@@ -51,7 +50,6 @@ public class GoogleSheetsService {
                     "https://www.googleapis.com/auth/spreadsheets.readonly"
                 )
             );
-
         Sheets sheetsService = new Sheets.Builder(
             GoogleNetHttpTransport.newTrustedTransport(),
             GsonFactory.getDefaultInstance(),
@@ -77,27 +75,11 @@ public class GoogleSheetsService {
         for (int i = 1; i < rows.size(); i++) {
 
             List<Object> row = rows.get(i);
-
-            Long id = row.size() > 0
-                ? Long.parseLong(row.get(0).toString())
-                : null;
-
-            String name = row.size() > 1
-                ? row.get(1).toString()
-                : "";
-
-            String position = row.size() > 2
-                ? row.get(2).toString()
-                : "";
-
-            String email = row.size() > 3
-                ? row.get(3).toString()
-                : "";
-
-            String phone = row.size() > 4
-                ? row.get(4).toString()
-                : "";
-
+            Long id = row.size() > 0 ? Long.parseLong(row.get(0).toString()) : null;
+            String name = row.size() > 1 ? row.get(1).toString() : "";
+            String position = row.size() > 2 ? row.get(2).toString() : "";
+            String email = row.size() > 3 ? row.get(3).toString() : "";
+            String phone = row.size() > 4 ? row.get(4).toString() : "";
             Employee employee = new Employee(
                 id,
                 name,
@@ -105,7 +87,6 @@ public class GoogleSheetsService {
                 email,
                 phone
             );
-
             employees.add(employee);
         }
         return employees;

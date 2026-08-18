@@ -13,19 +13,22 @@ import ao.grupowedo.emailssignature.service.EmployeeService;
 @RestController
 @RequestMapping("/api/v1/employees")
 public class EmployeeController {
-    private final EmployeeService   employeeService;
+
+    private final EmployeeService employeeService;
 
     public EmployeeController(EmployeeService employeeService) {
         this.employeeService = employeeService;
     }
 
     @GetMapping
-    public List<Employee>   getAllEmployees() throws Exception{
+    public List<Employee> getAllEmployees() throws Exception {
         return employeeService.getAllEmployees();
     }
 
     @GetMapping("/{id}")
-    public Employee         getEmployeeById(@PathVariable Long id) throws Exception {
+    public Employee getEmployeeById(
+        @PathVariable Long id
+    ) throws Exception {
         return employeeService.getEmployeeById(id);
     }
 }

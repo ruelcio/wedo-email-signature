@@ -10,8 +10,32 @@ import ao.grupowedo.emailssignature.model.ErrorResponse;
 
 @RestControllerAdvice
 public class GlobalExceptionHandler {
+
     @ExceptionHandler(EmployeeNotFoundExeption.class)
-    public ResponseEntity<ErrorResponse>   handleEmployeeNotFound(EmployeeNotFoundExeption exception) {
-        return new ResponseEntity<>(new ErrorResponse(HttpStatus.NOT_FOUND.value(), exception.getMessage()), HttpStatus.NOT_FOUND);
+    public ResponseEntity<ErrorResponse> handleEmployeeNotFound(
+        EmployeeNotFoundExeption exception
+    ) {
+        return ResponseEntity
+            .status(HttpStatus.NOT_FOUND)
+            .body(
+                new ErrorResponse(
+                    HttpStatus.NOT_FOUND.value(),
+                    exception.getMessage()
+                )
+            );
+    }
+
+    @ExceptionHandler(Exception.class)
+    public ResponseEntity<ErrorResponse> handleGeneralException(
+        Exception exception
+    ) {
+        return ResponseEntity
+            .status(HttpStatus.INTERNAL_SERVER_ERROR)
+            .body(
+                new ErrorResponse(
+                    HttpStatus.INTERNAL_SERVER_ERROR.value(),
+                    "Ocorreu um erro interno no servidor."
+                )
+            );
     }
 }
